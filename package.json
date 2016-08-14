@@ -1,0 +1,29 @@
+{
+  "name": "class_logger",
+  "version": "1.0.0",
+  "description": "Blank.js ========",
+  "main": "blank.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/awebb123/Class_Logger.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/awebb123/Class_Logger/issues"
+  },
+  "homepage": "https://github.com/awebb123/Class_Logger#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.0.9",
+    "angular-ui-router": "^0.3.1"
+  }
+}
