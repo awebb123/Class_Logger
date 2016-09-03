@@ -12,20 +12,25 @@ angular.module('cp', ['ngMaterial', 'ui.router'])
             })
 
             .state('/login', {
-               url: '/login', 
+               url: '/login',
                templateUrl: './templates/pages/login.html'
             })
 
             .state('/signup', {
                url: '/signup',
-               templateUrl: './templates/pages/signup.html' 
+               templateUrl: './templates/pages/signup.html'
             })
-            
+
             .state('/dash', {
                url: '/dash',
-               templateUrl: './templates/pages/dash.html' 
+               templateUrl: './templates/pages/dash.html'
             })
-        
+
+            .state('/account', {
+              url: '/account',
+              templateUrl: './templates/pages/account.html'
+            })
+
             .state('/main', {
                 url:'/main',
                 templateUrl: './templates/pages/main.html'
