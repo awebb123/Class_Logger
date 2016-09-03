@@ -1,0 +1,24 @@
+<nav-bar></nav-bar>
+
+<link href="styles/pages/login.css" rel="stylesheet">
+
+<div class="loginContainer">
+  <title>Login Page</title>
+   <form name="userForm">
+     <div layout="column" layout-align="center" flex="35" flex-offset="30">
+       <md-input-container class="sm-block">
+         <label>E-mail</label>
+         <input ng-model="user.email" type="email">
+       </md-input-container>
+     </div>
+     <div layout="column" layout-align="center" flex="35" flex-offset="30">
+       <md-input-container class="sm-block">
+         <label>Password</label>
+         <input ng-model="user.pswd" type="password">
+       </md-input-container>
+     </div>
+     <div layout="column" layout-align="center" flex="5" flex-offset="45">
+       <md-button ui-sref="/dash">Login</md-button>
+     </div>
+   </form>
+ </div>
