@@ -1,11 +1,11 @@
-<div ng-controller="AccountCtrl" id="account-container" layout-align="center">
+<div ng-controller="ResetPswdCtrl" class="ResetPswdLinkContainer" layout-align="center">
   <md-toolbar class="md-hue-2">
       <div class="md-toolbar-tools">
           <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
               <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
           </md-button>
           <h2>
-              <span>Account</span>
+              <span>Reset Your Password</span>
           </h2>
           <span flex></span>
       </div>
@@ -26,12 +26,10 @@
       <li><a class="settings" href="#!">Settings</a></li>
   </ul>
 
-  <div id="help-container" layout="column" layout-align="center">
-    <font color="white" layout-align="center center">
-      What can we help you with?
-    </font>
-    <div ng-controller="AccountCtrl" id="account-btns" layout-align="center center">
-      <md-button class="account-btn" ui-sref="/resetPswd">Reset My Password</md-button>
-    </div>
+  <div class="reset-pswd-container" layout="column" layout-align="center center">
+    <md-input-container class="md-block">
+      <label>Email</label>
+      <input ng-model="user.email" type="email">
+    </md-input-container>
+    <md-button class="md-raised md-primary">Submit</md-button>
   </div>
-</div>

@@ -1,11 +1,11 @@
-<div ng-controller="AccountCtrl" id="account-container" layout-align="center">
+<div ng-controller="ResetPswdCtrl" id="ResetPswdContainer" layout-align="center">
   <md-toolbar class="md-hue-2">
       <div class="md-toolbar-tools">
           <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
               <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
           </md-button>
           <h2>
-              <span>Account</span>
+              <span>Reset Your Password</span>
           </h2>
           <span flex></span>
       </div>
@@ -22,16 +22,22 @@
       <li><a href="#!">Second Link</a></li>
       <li><div class="divider"></div></li>
       <li><a class="account" ui-sref="/account">Account</a></li>
-      <li><a class="logout" href="#!">Logout</a></li>
+      <li><a class="logout" ui-sref="/splash">Logout</a></li>
       <li><a class="settings" href="#!">Settings</a></li>
   </ul>
-
-  <div id="help-container" layout="column" layout-align="center">
-    <font color="white" layout-align="center center">
-      What can we help you with?
-    </font>
-    <div ng-controller="AccountCtrl" id="account-btns" layout-align="center center">
-      <md-button class="account-btn" ui-sref="/resetPswd">Reset My Password</md-button>
-    </div>
-  </div>
+  <md-content layout="column" layout-padding>
+    <md-input-container id="email-input">
+      <label>Email</label>
+      <input ng-model="user.email" type="email" required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
+      <div ng-messages="userForm.email.$error">
+        <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+          Your email must be between 10 and 100 characters long and look like an email address.
+        </div>
+      </div>
+      <div id="resetPswd-btns" layout="row" layout-align="center">
+        <md-button class="resetPswd-btn">Submit</md-button>
+        <md-button class="resetPswd-btn" ui-sref="/account">Cancel</md-button>
+      </div>
+    </md-input-container>
+  </md-content>
 </div>
