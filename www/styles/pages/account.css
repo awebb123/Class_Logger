@@ -17,15 +17,14 @@ html, body {
 }
 
 font {
-  padding-left: 530px;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 25px;
   font-size: 200%;
 }
 
-#account-btns {
-  padding-left: 580px;
-}
-
 .account-btn {
+  position: relative;
   border: 1px solid white;
   color: white;
 }

@@ -9,18 +9,13 @@ html, body {
   width: 100%;
 }
 
-#ResetPswdContainer {
-  background-image: url("../../../imgs/hall.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-#resetPswd-btns {
-  padding-bottom: 300px;
+.email-input {
+  position: relative;
+  padding-top: 50px;
 }
 
 .resetPswd-btn {
+  position: relative;
   border: 1px solid white;
   color: white;
 }
