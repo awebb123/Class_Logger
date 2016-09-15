@@ -1,35 +1,62 @@
-<nav-bar></nav-bar>
+<div ng-controller="DashCtrl" id="main-activity-container">
+  <md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools">
+      <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
+        <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
+      </md-button>
+      <h2>
+        <span>Add Your Class</span>
+      </h2>
+      <span flex></span>
+    </div>
+  </md-toolbar>
+
+  <ul id="slide-out" class="side-nav">
+    <li><div class="userView">
+      <img class="background" src="../../imgs/hall.png">
+      <a href="#!user"><img class="circle" src="../../imgs/icons/account_icon.svg"></a>
+      <a href="#!name"><span class="white-text name">User's Name</span></a>
+      <a href="#!email"><span class="white-text email">someone@email.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">Cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="account" ui-sref="/account">Account</a></li>
+    <li><a class="logout" href="#!">Logout</a></li>
+    <li><a class="settings" href="#!">Settings</a></li>
+    <li><a class="dash" ui-sref="/dash">Dashboard</a></li>
+  </ul>
 
 <div class="mainContainer">
   <form name="userForm">
-    <div class="class" layout="row" layout-align="space-between center" flex="50" flex-offset="25">
+    <div class="class" layout="column" layout-align="center center">
       <md-input-container class="sm-block">
         <label>Class Name</label>
-        <input ng-model="user.className" type="text">
+        <input ng-model="user.className" type="text" required="true">
       </md-input-container>
-      <md-input-container>
+      <md-input-container class="sm-block">
         <label>Intsructor (Optional)</label>
         <input ng-model="user.instructor" type="text">
       </md-input-container>
     </div>
-    <div class="times" layout="row" layout-align="space-between center" flex="50" flex-offset="25">
+    <div class="times" layout="column" layout-align="center center">
       <md-input-container class="sm-block">
         <label>Start Time</label>
-        <input ng-model="user.classStart" type="text">
+        <input ng-model="user.classStart" type="text" required="true">
       </md-input-container>
       <md-input-container class="sm-block">
         <label>End Time</label>
-        <input ng-model="user.classEnd" type="text">
+        <input ng-model="user.classEnd" type="text" required="true">
       </md-input-container>
     </div>
-    <div class="location" layout="row" layout-align="space-between center" flex="50" flex-offset="25">
-      <md-input-container>
+    <div class="location" layout="column" layout-align="center center">
+      <md-input-container class="sm-block">
         <label>Building</label>
-        <input ng-model="user.building" type="text">
-      </md-input-container>
-      <md-input-container>
+        <input ng-model="user.building" type="text" required="true">
+      </md-input-container class="sm-block">
+      <md-input-container class="sm-block">
         <label>Room</label>
-        <input ng-model="user.room" type="text">
+        <input ng-model="user.room" type="text" required="true">
       </md-input-container>
     </div>
     <div id="activity-btns" layout="row" layout-align="center end">

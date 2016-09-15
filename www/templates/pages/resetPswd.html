@@ -1,43 +1,44 @@
-<div ng-controller="ResetPswdCtrl" id="ResetPswdContainer" layout-align="center">
-  <md-toolbar class="md-hue-2">
-      <div class="md-toolbar-tools">
+<md-content>
+  <div class="resetPswdContainer" ng-controller="ResetPswdCtrl">
+    <form name="userForm">
+      <md-toolbar class="md-hue-2">
+        <div class="md-toolbar-tools">
           <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
-              <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
+            <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
           </md-button>
           <h2>
-              <span>Reset Your Password</span>
+            <span>Reset Your Password</span>
           </h2>
           <span flex></span>
-      </div>
-  </md-toolbar>
+        </div>
+      </md-toolbar>
 
-  <ul id="slide-out" class="side-nav">
-      <li><div class="userView">
-          <img class="background" src="../../imgs/hall.png">
-          <a href="#!user"><img class="circle" src="../../imgs/icons/account_icon.svg"></a>
-          <a href="#!name"><span class="white-text name">Alex Webb</span></a>
-          <a href="#!email"><span class="white-text email">hacker@gmail.com</span></a>
-      </div></li>
-      <li><a href="#!"><i class="material-icons">Cloud</i>First Link With Icon</a></li>
-      <li><a href="#!">Second Link</a></li>
-      <li><div class="divider"></div></li>
-      <li><a class="account" ui-sref="/account">Account</a></li>
-      <li><a class="logout" ui-sref="/splash">Logout</a></li>
-      <li><a class="settings" href="#!">Settings</a></li>
-  </ul>
-  <md-content layout="column" layout-padding>
-    <md-input-container id="email-input">
-      <label>Email</label>
-      <input ng-model="user.email" type="email" required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
-      <div ng-messages="userForm.email.$error">
-        <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
-          Your email must be between 10 and 100 characters long and look like an email address.
+      <ul id="slide-out" class="side-nav">
+        <li><div class="userView">
+            <img class="background" src="../../imgs/hall.png">
+            <a href="#!user"><img class="circle" src="../../imgs/icons/account_icon.svg"></a>
+            <a href="#!name"><span class="white-text name">User's Name</span></a>
+            <a href="#!email"><span class="white-text email">someone@email.com</span></a>
+        </div></li>
+        <li><a href="#!"><i class="material-icons">Cloud</i>First Link With Icon</a></li>
+        <li><a href="#!">Second Link</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="account" ui-sref="/account">Account</a></li>
+        <li><a class="logout" ui-sref="/splash">Logout</a></li>
+        <li><a class="settings" href="#!">Settings</a></li>
+        <li><a class="dash" ui-sref="/dash">Dashboard</a></li>
+      </ul>
+
+      <div class="email-input" layout="column" layout-align="center center">
+        <md-input-container>
+          <label>Email</label>
+          <input ng-model="user.email" type="email" required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
+        </md-input-container>
+        <div id="resetPswd-btns" layout="row" layout-align="center center">
+          <md-button class="resetPswd-btn">Submit</md-button>
+          <md-button class="resetPswd-btn" ui-sref="/account">Cancel</md-button>
         </div>
       </div>
-      <div id="resetPswd-btns" layout="row" layout-align="center">
-        <md-button class="resetPswd-btn">Submit</md-button>
-        <md-button class="resetPswd-btn" ui-sref="/account">Cancel</md-button>
-      </div>
-    </md-input-container>
-  </md-content>
-</div>
+    </form>
+  </div>
+</md-content>
