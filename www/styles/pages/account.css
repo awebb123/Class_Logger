@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#account-container {
+  background-image: url("../../../imgs/hall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+font {
+  padding-left: 530px;
+  font-size: 200%;
+}
+
+#account-btns {
+  padding-left: 580px;
+}
+
+.account-btn {
+  border: 1px solid white;
+  color: white;
+}

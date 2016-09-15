@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#ResetPswdContainer {
+  background-image: url("../../../imgs/hall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+#resetPswd-btns {
+  padding-bottom: 300px;
+}
+
+.resetPswd-btn {
+  border: 1px solid white;
+  color: white;
+}
