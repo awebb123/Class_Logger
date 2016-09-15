@@ -31,6 +31,16 @@ angular.module('cp', ['ngMaterial', 'ui.router'])
               templateUrl: './templates/pages/account.html'
             })
 
+            .state('/resetPswd', {
+              url: '/resetPswd',
+              templateUrl: './templates/pages/resetPswd.html'
+            })
+
+            .state('/resetPswdLink', {
+              url: '/resetPswdLink',
+              templateUrl: './templates/pages/resetPswdLink'
+            })
+
             .state('/main', {
                 url:'/main',
                 templateUrl: './templates/pages/main.html'
