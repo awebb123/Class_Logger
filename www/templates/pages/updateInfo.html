@@ -1,11 +1,11 @@
-<div ng-controller="AccountCtrl" id="account-container">
+<div ng-controller="AccountCtrl" id="updateInfoContainer">
   <md-toolbar class="md-hue-2">
     <div class="md-toolbar-tools">
       <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
         <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
       </md-button>
       <h2>
-        <span>Your Account</span>
+        <span>Update Your Info</span>
       </h2>
       <span flex></span>
     </div>
@@ -26,3 +26,24 @@
       <li><a class="settings" ui-sref="/settings">Settings</a></li>
       <li><a class="logout" ui-sref="/splash">Logout</a></li>
   </ul>
+
+  <div id="updateInfoContainer" layout="column" layout-align="center-center">
+    <md-input-container>
+      <label color="white">Email</label>
+      <input ng-model="login.credentials.email" type="email"
+             required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
+    </md-input-container>
+    <md-input-container>
+      <label color="white">Username</label>
+      <input ng-model="user.name" type="text"/>
+    </md-input-container>
+    <md-input-container>
+      <label color="white">Phone Number</label>
+      <input ng-model="user.phone" type="text" required minlength="10" maxlength="10"/>
+    </md-input-container>
+    <div id="updateInfoBbtns" layout="row" layout-align="center center">
+      <md-button class="updateInfoBtn" ui-sref="/updateInfoSuccess">Submit</md-button>
+      <md-button class="updateInfoBtn" ui-sref="/settings">Cancel</md-button>
+    </div>
+  </div>
+</div>

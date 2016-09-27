@@ -1,3 +1,4 @@
+
 <md-toolbar class="md-hue-2" ng-controller="DashCtrl">
     <div class="md-toolbar-tools">
         <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
@@ -20,9 +21,10 @@
     <li><a href="#!"><i class="material-icons">Cloud</i>First Link With Icon</a></li>
     <li><a href="#!">Second Link</a></li>
     <li><div class="divider"></div></li>
+    <li><a class="dash" ui-sref="/dash">Dashboard</a></li>
     <li><a class="account" ui-sref="/account">Account</a></li>
-    <li><a class="logout" href="#!">Logout</a></li>
-    <li><a class="settings" href="#!">Settings</a></li>
+    <li><a class="settings" ui-sref="/settings">Settings</a></li>
+    <li><a class="logout" ui-sref="/splash">Logout</a></li>
 </ul>
 
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;" ng-controller="DashCtrl">

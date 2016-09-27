@@ -1,11 +1,11 @@
-<div ng-controller="AccountCtrl" id="account-container">
+<div ng-controller="AccountCtrl" id="settings-container">
   <md-toolbar class="md-hue-2">
     <div class="md-toolbar-tools">
       <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
         <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
       </md-button>
       <h2>
-        <span>Your Account</span>
+        <span>Your Settings</span>
       </h2>
       <span flex></span>
     </div>
@@ -26,3 +26,14 @@
       <li><a class="settings" ui-sref="/settings">Settings</a></li>
       <li><a class="logout" ui-sref="/splash">Logout</a></li>
   </ul>
+
+  <div class="help-container" layout="column" layout-align="center center">
+    <font>
+      What can we help you with?
+    </font>
+    <div class="settings-btns" layout="column">
+      <md-button class="settings-btn" ui-sref="/resetPswd">Reset My Password</md-button>
+      <md-button class="settings-btn" ui-sref="/updateInfo">Update My Info</md-button>
+    </div>
+  </div>
+</div>

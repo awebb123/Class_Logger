@@ -5,21 +5,23 @@
     <div layout="column" layout-align="center" flex="35" flex-offset="30">
       <md-input-container class="sm-block">
         <label>E-mail</label>
-        <input ng-model="user.email" type="email">
+        <input ng-model="login.credentials.email" type="email"
+               required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
       </md-input-container>
     </div>
     <div layout="column" layout-align="center" flex="35" flex-offset="30">
       <md-input-container class="sm-block">
         <label>Password</label>
-        <input ng-model="user.pswd" type="password">
+        <input ng-model="login.credentials.password" type="password" required minlength="8"/>
       </md-input-container>
       <md-input-container class="sm-block">
         <label>Confirm Password</label>
-        <input ng-model="user.confirmPswd" type="password">
+        <input ng-model="login.credentials.confirmPassword" type="password" required minlength="8"/>
       </md-input-container>
     </div>
-    <div layout="column" layout-align="center" flex="5" flex-offset="45">
+    <div layout="row" layout-align="center" flex="5" flex-offset="45">
       <md-button ui-sref="/dash">Signup</md-button>
+      <md-button ui-sref="/splash">Cancel</md-button>
     </div>
   </form>
 </div>

@@ -8,13 +8,14 @@
      <div layout="column" layout-align="center" flex="35" flex-offset="30">
        <md-input-container class="sm-block">
          <label>Email</label>
-         <input ng-model="user.email" type="email" required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
+         <input ng-model="login.credentials.email" type="email" 
+                required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/"/>
        </md-input-container>
      </div>
      <div layout="column" layout-align="center" flex="35" flex-offset="30">
        <md-input-container class="sm-block">
          <label>Password</label>
-         <input ng-model="user.pswd" type="password" required minlength="8"/>
+         <input ng-model="login.credentials.password" type="password" required minlength="8"/>
        </md-input-container>
      </div>
      <div layout="row" layout-align="center" flex="5" flex-offset="45">

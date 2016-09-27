@@ -1,11 +1,11 @@
-<div ng-controller="AccountCtrl" id="account-container">
+<div ng-controller="AccountCtrl" id="updateInfoSuccessContainer">
   <md-toolbar class="md-hue-2">
     <div class="md-toolbar-tools">
       <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
         <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
       </md-button>
       <h2>
-        <span>Your Account</span>
+        <span>Update Your Info</span>
       </h2>
       <span flex></span>
     </div>
@@ -26,3 +26,14 @@
       <li><a class="settings" ui-sref="/settings">Settings</a></li>
       <li><a class="logout" ui-sref="/splash">Logout</a></li>
   </ul>
+
+  <div class="successContainer" layout="column" layout-align="center center">
+    <font>
+      You have successfully updated your account information!
+    </font>
+    <div id="successBtns" layout="row" layout-align="center center">
+      <md-button class="successBtn" ui-sref="/account">Your Account</md-button>
+      <md-button class="successBtn" ui-sref="/dash">Dashboard</md-button>
+    </div>
+  </div>
+</div>
