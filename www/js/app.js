@@ -31,6 +31,21 @@ angular.module('cp', ['ngMaterial', 'ui.router'])
               templateUrl: './templates/pages/account.html'
             })
 
+            .state('/settings', {
+              url: '/settigs',
+              templateUrl: './templates/pages/settings.html'
+            })
+
+            .state('/updateInfo', {
+              url: '/updateInfo',
+              templateUrl: './templates/pages/updateInfo.html'
+            })
+
+            .state('/updateInfoSuccess', {
+              url: '/updateInfoSuccess',
+              templateUrl: './templates/pages/updateInfoSuccess.html'
+            })
+
             .state('/resetPswd', {
               url: '/resetPswd',
               templateUrl: './templates/pages/resetPswd.html'
