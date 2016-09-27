@@ -9,16 +9,18 @@ html, body {
   width: 100%;
 }
 
-#resetPswdContainer {
+#settings-container {
   width: 100%;
   margin: 0 auto;
 }
 
-.email-input {
+font {
   position: relative;
   padding-top: 50px;
+  padding-bottom: 25px;
+  font-size: 200%;
 }
 
-.resetPswd-btn {
+.settings-btn {
   position: relative;
 }
