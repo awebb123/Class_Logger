@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#splsh-btns {
+  padding-top: 550px;
+}
+
+.splash-btn {
+  border: 1px solid white;
+  color: white;
+}
+
+md-content {
+  background-image: url("../../../imgs/hall.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
