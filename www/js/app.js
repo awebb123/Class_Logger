@@ -1,48 +1,40 @@
-angular.module('cp', ['ngMaterial', 'ui.router'])
+angular.module('cp', ['ionic', 'ngMaterial'])
 
-    .config(function($urlRouterProvider, $stateProvider) {
+.run(function($ionicPlatform) {
+  $ionicPlatform.ready(function() {
+    if(window.cordova && window.cordova.plugins.Keyboard) {
+      cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 
-        $urlRouterProvider.otherwise('/splash');
+      cordova.plugins.Keyboard.disableScroll(true);
+    }
+    if(window.StatusBar) {
+      StatusBar.styleDefault();
+    }
+  });
+})
 
-        $stateProvider
+.config(function($urlRouterProvider, $stateProvider) {
+  $urlRouterProvider.otherwise('/splash');
 
-            .state('/splash', {
-                url: '/splash',
-                templateUrl: './templates/pages/splash.html'
-            })
+  $stateProvider
 
-            .state('/login', {
-               url: '/login',
-               templateUrl: './templates/pages/login.html'
-            })
+    .state('/splash', {
+      url: '/splash',
+      templateUrl: './templates/pages/splash.html',
+      templateStyle: './css/pages/splash.css'
+    })
 
-            .state('/signup', {
-               url: '/signup',
-               templateUrl: './templates/pages/signup.html'
-            })
+    .state('/signup', {
+      url: '/signup',
+      templateUrl: './templates/pages/signup.html',
+      templateStyle: './css/pages/signup.css'
+      
+    })
 
-            .state('/dash', {
-               url: '/dash',
-               templateUrl: './templates/pages/dash.html'
-            })
-
-            .state('/account', {
-              url: '/account',
-              templateUrl: './templates/pages/account.html'
-            })
-
-            .state('/resetPswd', {
-              url: '/resetPswd',
-              templateUrl: './templates/pages/resetPswd.html'
-            })
-
-            .state('/resetPswdLink', {
-              url: '/resetPswdLink',
-              templateUrl: './templates/pages/resetPswdLink'
-            })
-
-            .state('/main', {
-                url:'/main',
-                templateUrl: './templates/pages/main.html'
-            });
+    .state('/login', {
+      url: '/login',
+      templateUrl: './templates/pages/login.html',
+      templateStyle: './css/pages/login.css'
     });
+
+});

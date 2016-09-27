@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+#splash-content {
+  background-color: #0c60ee;
+  height: 100%;
+  width: 100%;
+}
+
+#splash-btns {
+  position: fixed;
+  padding: 30px 30px;
+  bottom: 0;
+  width: 100%
+}
+
+.splash-btn {
+  border: 2px solid white;
+  color: white;
+}
