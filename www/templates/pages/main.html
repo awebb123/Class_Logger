@@ -25,11 +25,13 @@
       <li><a class="account" ui-sref="/account">Account</a></li>
       <li><a class="settings" ui-sref="/settings">Settings</a></li>
       <li><a class="logout" ui-sref="/splash">Logout</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="about" ui-sref="/about">About Us</a></li>
   </ul>
 
   <div class="mainContainer">
-    <form name="userForm">
-      <div class="class" layout="column" layout-align="center center">
+    <form name="userForm" layout="column">
+      <div class="class" layout="row" layout-align="center center">
         <md-input-container class="sm-block">
           <label>Class Name</label>
           <input ng-model="user.className" type="text" required="true">
@@ -39,7 +41,7 @@
           <input ng-model="user.instructor" type="text">
         </md-input-container>
       </div>
-      <div class="times" layout="column" layout-align="center center">
+      <div class="times" layout="row" layout-align="center center">
         <md-input-container class="sm-block">
           <label>Start Time</label>
           <input ng-model="user.classStart" type="text" required="true">
@@ -49,7 +51,7 @@
           <input ng-model="user.classEnd" type="text" required="true">
         </md-input-container>
       </div>
-      <div class="location" layout="column" layout-align="center center">
+      <div class="location" layout="row" layout-align="center center">
         <md-input-container class="sm-block">
           <label>Building</label>
           <input ng-model="user.building" type="text" required="true">

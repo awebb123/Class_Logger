@@ -1,0 +1,87 @@
+<div ng-controller="AccountCtrl" id="about-container">
+  <md-toolbar class="md-hue-2" ng-controller="AccountCtrl">
+      <div class="md-toolbar-tools">
+          <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
+              <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
+          </md-button>
+          <h2>
+              <span>About Us</span>
+          </h2>
+          <span flex></span>
+      </div>
+  </md-toolbar>
+
+  <ul id="slide-out" class="side-nav">
+      <li><div class="userView">
+          <img class="background" src="../../imgs/hall.png">
+          <a href="#!user"><img class="circle" src="../../imgs/icons/account_icon.svg"></a>
+          <a href="#!name"><span class="white-text name">User's Name</span></a>
+          <a href="#!email"><span class="white-text email">someone@email.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">Cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="dash" ui-sref="/dash">Dashboard</a></li>
+      <li><a class="account" ui-sref="/account">Account</a></li>
+      <li><a class="settings" ui-sref="/settings">Settings</a></li>
+      <li><a class="logout" ui-sref="/splash">Logout</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="about" ui-sref="/about">About Us</a></li>
+  </ul>
+
+  <div id="about-cont">
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="About the Developers">
+        <h6 id="meet" class="md-display-2">Meet the developers</h6>
+        <div class="divider"></div>
+        <div id="infoCards" layout="column">
+          <div id="devCard1">
+            <md-card id="developerCard1" md-theme="dark-grey">
+              <md-card-title>
+                <md-card-title-text>
+                  <span class="md-headline">Developer</span>
+                  <span class="md-subhead">Role</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                  <div class="md-media-xl card-media">
+                    <img id="img" ng-src="{{imagePath}}" class="md-card-image">
+                  </div>
+                </md-card-title-media>
+              </md-card-title>
+              <md-card-actions layout="row" layout-align="end center">
+                <md-button>Action 1</md-button>
+                <md-button>Action 2</md-button>
+              </md-card-actions>
+            </md-card>
+          </div>
+          <div class="divider"></div>
+          <div id="devCard2">
+            <md-card id="developerCard2" md-theme="dark-grey">
+              <md-card-title>
+                <md-card-title-text>
+                  <span class="md-headline">Developer</span>
+                  <span class="md-subhead">Role</span>
+                </md-card-title-text>
+                <md-card-title-media>
+                  <div class="md-media-xl card-media">
+                    <img id="img" ng-src="{{imagePath}}" class="md-card-image">
+                  </div>
+                </md-card-title-media>
+              </md-card-title>
+              <md-card-actions layout="row" layout-align="end center">
+                <md-button>Action 1</md-button>
+                <md-button>Action 2</md-button>
+              </md-card-actions>
+            </md-card>
+          </div>
+        </div>
+      </md-tab>
+      <md-tab label="Behind the Scenes">
+        <h6 id="scene" class="md-display-2">What happens behind the scenes</h6>
+        <p id="info">
+          Description about how the app works...
+        </p>
+      </md-tab>
+    </md-tabs>
+  </div>
+</div>
