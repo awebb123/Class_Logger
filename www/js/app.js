@@ -57,7 +57,12 @@ angular.module('cp', ['ngMaterial', 'ui.router'])
             })
 
             .state('/main', {
-                url:'/main',
+                url: '/main',
                 templateUrl: './templates/pages/main.html'
+            })
+
+            .state('/about', {
+                url: '/about',
+                templateUrl: './templates/pages/about.html'
             });
     });
