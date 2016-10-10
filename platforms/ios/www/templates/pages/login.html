@@ -1,0 +1,26 @@
+<link href="css/pages/login.css" rel="stylesheet">
+
+<!--<nav-bar></nav-bar>-->
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <md-icon aria-label="Go Back" ui-sref="/splash">
+            <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+        </md-icon>
+        <span flex></span>
+    </div>
+</md-toolbar>
+
+<h3>Login</h3>
+
+<md-content class="md-no-momentum">
+    <md-input-container class="md-icon-float md-block">
+        <!-- Use floating label instead of placeholder -->
+        <label>Name</label>
+        <md-icon md-svg-src="img/icons/ic_person_24px.svg" class="name"></md-icon>
+        <input ng-model="user.name" type="text">
+    </md-input-container>
+
+
