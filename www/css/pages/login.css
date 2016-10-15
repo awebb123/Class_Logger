@@ -1,11 +1,28 @@
-h3 {
-    color: blue;
+* {
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 span {
     padding-left: 10px;
 }
 
-.username {
-
+#input-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
 }
+
+#email-input {
+    width: 80%;
+    margin-bottom: 0;
+}
+
+#password-field {
+    width: 80%;
+    margin: 0;
+}
+
+
