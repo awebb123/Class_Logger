@@ -1,7 +1,7 @@
-angular.module('cp', ['ionic', 'ngMaterial'])
+angular.module('cp', ['ionic', 'ngMaterial', 'ngAnimate', 'ngAria'])
 
 .run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
+  $ionicPlatform.ready(() => {
     if(window.cordova && window.cordova.plugins.Keyboard) {
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 
@@ -13,7 +13,7 @@ angular.module('cp', ['ionic', 'ngMaterial'])
   });
 })
 
-.config(function($urlRouterProvider, $stateProvider) {
+.config(($urlRouterProvider, $stateProvider) => {
   $urlRouterProvider.otherwise('/splash');
 
   $stateProvider
@@ -37,8 +37,6 @@ angular.module('cp', ['ionic', 'ngMaterial'])
       templateStyle: './css/pages/login.css'
     });
 
-})
+});
 
-	.config(function($mdThemingProvider) {
 
-	});
