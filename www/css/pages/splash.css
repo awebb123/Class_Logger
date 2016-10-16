@@ -3,7 +3,10 @@
 }
 
 #splash-content {
-  background-color: #0c60ee;
+  background-image: url(../../img/splash-img.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   height: 100%;
   width: 100%;
 }
@@ -16,6 +19,8 @@
 }
 
 .splash-btn {
-  border: 1px solid white;
+  border: 2px solid white;
   color: white;
 }
+
+
