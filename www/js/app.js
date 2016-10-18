@@ -37,6 +37,41 @@ angular.module('cp', ['ionic', 'ngMaterial', 'ngAnimate', 'ngAria'])
       templateStyle: './css/pages/login.css'
     });
 
+<<<<<<< HEAD
 });
+=======
+            .state('/settings', {
+              url: '/settigs',
+              templateUrl: './templates/pages/settings.html'
+            })
+
+            .state('/updateInfo', {
+              url: '/updateInfo',
+              templateUrl: './templates/pages/updateInfo.html'
+            })
+
+            .state('/updateInfoSuccess', {
+              url: '/updateInfoSuccess',
+              templateUrl: './templates/pages/updateInfoSuccess.html'
+            })
+
+            .state('/resetPswd', {
+              url: '/resetPswd',
+              templateUrl: './templates/pages/resetPswd.html'
+            })
+>>>>>>> 47aacb4f232285a7c030a5c7ffc70b990e73e264
 
 
+<<<<<<< HEAD
+=======
+            .state('/main', {
+                url: '/main',
+                templateUrl: './templates/pages/main.html'
+            })
+
+            .state('/about', {
+                url: '/about',
+                templateUrl: './templates/pages/about.html'
+            });
+    });
+>>>>>>> 47aacb4f232285a7c030a5c7ffc70b990e73e264

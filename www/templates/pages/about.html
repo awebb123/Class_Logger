@@ -1,0 +1,128 @@
+<div ng-controller="AccountCtrl" id="about-container">
+  <md-toolbar class="md-hue-2" ng-controller="AccountCtrl">
+      <div class="md-toolbar-tools">
+          <md-button data-activates="slide-out" class="button-collapse" ng-click="sideNav()" aria-label="Settings">
+              <md-icon md-svg-icon="imgs/icons/menu_icon.svg"></md-icon>
+          </md-button>
+          <h2>
+              <span>About Us</span>
+          </h2>
+          <span flex></span>
+      </div>
+  </md-toolbar>
+
+  <ul id="slide-out" class="side-nav">
+      <li><div class="userView">
+          <img class="background" src="../../imgs/hall.png">
+          <a href="#!user"><img class="circle" src="../../imgs/icons/account_icon.svg"></a>
+          <a href="#!name"><span class="white-text name">User's Name</span></a>
+          <a href="#!email"><span class="white-text email">someone@email.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">Cloud</i>First Link With Icon</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="dash" ui-sref="/dash">Dashboard</a></li>
+      <li><a class="account" ui-sref="/account">Account</a></li>
+      <li><a class="settings" ui-sref="/settings">Settings</a></li>
+      <li><a class="logout" ui-sref="/splash">Logout</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="about" ui-sref="/about">About Us</a></li>
+  </ul>
+
+  <div id="about-cont">
+    <md-tabs md-dynamic-height md-border-bottom>
+      <md-tab label="About the Developers">
+        <h6 id="meet" class="md-display-2">Meet the developers</h6>
+          <div id="infoCards" layout="column" layout-align="center">
+            <md-tabs md-dynamic-height md-border-bottom>
+              <md-tab label="Developer">
+                <fieldset class="standard">
+                  <div id="devCard1" layout="row">
+                    <md-card id="developerCard1">
+                      <img id="img" ng-src="{{imagePath}}" class="md-card-image" alt="Developer"></img>
+                      <md-card-title>
+                        <md-card-title-text>
+                          <span class="md-headline">Developer</span>
+                          <span class="md-subline">Role</span>
+                        </md-card-title-text>
+                      </md-card-title>
+                      <md-card-content>
+                      </md-card-content>
+                    </md-card>
+                    <md-card id="developerCard1-Bio">
+                      <img id="img" ng-src="{{imagePath}}" class="md-card-image" alt="Developer"></img>
+                      <md-card-title>
+                        <md-card-title-text>
+                          <span class="md-headline">Developer</span>
+                          <span class="md-subline">Area of Work</span>
+                        </md-card-title-text>
+                      </md-card-title>
+                      <md-card-content>
+                        <p id="about-developer">
+                          Short bio on the developer...
+                        </p>
+                      </md-card-content>
+                    </md-card>
+                  </div>
+                </fieldset>
+              </md-tab>
+              <md-tab label="Developer">
+                <fieldset class="standard">
+                  <div id="devCard2" layout="row">
+                    <md-card id="developerCard2">
+                      <img id="img" ng-src="{{imagePath}}" class="md-card-image" alt="Developer"></img>
+                      <md-card-title>
+                        <md-card-title-text>
+                          <span class="md-headline">Developer</span>
+                          <span class="md-subline">Role</span>
+                        </md-card-title-text>
+                      </md-card-title>
+                      <md-card-content>
+                      </md-card-content>
+                    </md-card>
+                    <md-card id="developerCard2-Bio">
+                      <img id="img" ng-src="{{imagePath}}" class="md-card-image" alt="Developer"></img>
+                      <md-card-title>
+                        <md-card-title-text>
+                          <span class="md-headline">Developer</span>
+                          <span class="md-subline">Area of Work</span>
+                        </md-card-title-text>
+                      </md-card-title>
+                      <md-card-content>
+                        <p id="about-developer">
+                          Short bio on the developer...
+                        </p>
+                      </md-card-content>
+                    </md-card>
+                  </div>
+                </fieldset>
+              </md-tab>
+            </md-tabs>
+          </div>
+        </md-tab>
+      <md-tab label="Behind the Scenes">
+        <h6 id="scenes" class="md-display-2">What happens behind the scenes</h6>
+        <fieldset class="standard">
+          <div id="examples" layout="row" layout-align="center">
+            <div id="enabled-examples" layout="column">
+              <md-button ng-disabled="false" layout-align="center">Example Button</md-button>
+              <md-checkbox ng-disabled="false" layout-align="center">Example Checkbox</md-checkbox>
+            </div>
+            <div id="disabled-examples" layout="column">
+              <md-button ng-disabled="true" layout-align="center">Disabled Button</md-button>
+              <md-checkbox ng-disabled="true" layout-align="center">Disabled Checkbox</md-checkbox>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <p id="paragraph">
+            The buttons you see are built using Angular Material. In our code, we use <code id="btn">md-button</code>
+            to create a button. To make a button disabled, we use <code id="btn">ng-disabled</code> and set the value
+            to <code id="btn">true</code>. The checkboxes are built similarly, however we use
+            <code id="btn">md-checkbox</code> to create them. To make a checkbox disabled, we use
+            <code id="btn">ng-disabled</code> and set the value to <code id="btn">true</code>, like we did for the button.
+          </p>
+        </fieldset>
+      </md-tab>
+    </md-tabs>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#about-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#info {
+  text-align: inherit;
+}
+
+#meet {
+  text-align: center;
+}
+
+#scene {
+  text-align: center;
+}
+
+#img {
+  width: inherit;
+  height: inherit;
+}
+
+#devCard1 {
+  position: inherit;
+  padding-top: 20px;
+  padding-right: 1000px;
+  padding-bottom: 20px;
+}
+
+#developerCard1 {
+  background-color: #f6f6f6;
+}
+
+#devCard2 {
+  position: inherit;
+  padding-top: 20px;
+  padding-right: 1000px;
+}
+
+#developerCard2 {
+  background-color: #f6f6f6;
+}
