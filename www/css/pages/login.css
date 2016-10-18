@@ -24,4 +24,14 @@ span {
     margin: 0;
 }
 
+#have-account {
+    position: fixed;
+    padding: 30px 30px;
+    bottom: 0;
+    width: 100%
+}
+
+
+
+
 

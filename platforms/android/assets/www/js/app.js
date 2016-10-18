@@ -13,7 +13,9 @@ angular.module('cp', ['ionic', 'ngMaterial'])
   });
 })
 
-.config(function($urlRouterProvider, $stateProvider) {
+.config(function($urlRouterProvider, $stateProvider, $mdThemingProvider) {
+    $mdThemingProvider.disableTheming();
+
   $urlRouterProvider.otherwise('/splash');
 
   $stateProvider
