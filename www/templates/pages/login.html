@@ -1,15 +1,15 @@
 <link href="css/pages/login.css" rel="stylesheet">
 
 <md-toolbar id="login-toolbar">
-    <div class="md-toolbar-tools">
-        <md-icon aria-label="Go Back" ui-sref="/splash">
-            <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
-            </svg>
-        </md-icon>
-        <span flex>Log in with e-mail</span>
-    </div>
+<div class="md-toolbar-tools">
+    <md-icon aria-label="Go Back" ui-sref="/splash">
+        <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+        </svg>
+    </md-icon>
+    <span flex>Log in with e-mail</span>
+</div>
 </md-toolbar>
 
 <div class="input-container">
@@ -31,7 +31,7 @@
 </div>
 
 <div class="btn-container">
-    <md-button id="login-btn" class="md-raised md-primary">LOG IN</md-button>
+    <md-button id="login-btn" class="md-raised md-primary" ui-sref="/dashboard">LOG IN</md-button>
     <md-button id="forgot-btn" md-no-ink class="md-primary">FORGOT PASSWORD?</md-button>
 </div>
 

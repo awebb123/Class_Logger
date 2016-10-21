@@ -1,0 +1,1 @@
+- Make sticky footer for signup and login view

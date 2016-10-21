@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#dash-toolbar {
+    background-color: #0f9d58;
+}
+
+span {
+    padding-left: 25px;
+}
+
+#fab {
+    background-color: #0f9d58;
+}
+

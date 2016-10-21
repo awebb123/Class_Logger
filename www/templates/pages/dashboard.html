@@ -1,0 +1,51 @@
+<link href="css/pages/dashboard.css" rel="stylesheet">
+
+<div ng-controller="DashCtrl">
+    <md-toolbar style="padding-left: 5px" id="dash-toolbar">
+        <div class="md-toolbar-tools">
+            <md-icon data-activates="slide-out" class="button-collapse" ng-click="sideNav()">
+                <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                </svg>
+            </md-icon>
+            <span flex>Dashboard</span>
+        </div>
+    </md-toolbar>
+
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="userView">
+                <img style="width: 100%" class="background" src="../../img/green.png">
+                <a href="#!user"><img class="circle" src="../../img/account_icon.svg"></a>
+                <a href="#!name"><span class="white-text name">Tim McKyer</span></a>
+                <a href="#!email"><span class="white-text email">hacker@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="#!"><i class="material-icons">cloud</i>My classes & registrations</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#!"><i class="material-icons">settings</i>Settings</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#!"><i class="material-icons">info</i>About</a></li>
+        <li><a href="#!"><i class="material-icons">chat</i>Feedback and support</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#!"><i class="material-icons">share</i>Share</a></li>
+    </ul>
+
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a id="fab" class="btn-floating btn-large " ng-click="openFab()">
+            <i class="large material-icons">add</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        </ul>
+    </div>
+</div>
