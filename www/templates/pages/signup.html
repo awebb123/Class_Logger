@@ -12,31 +12,51 @@
   </div>
 </md-toolbar>
 
+<div class="signup-wrap">
 
-<div class="input-container">
+  <div class="input-container">
 
-  <md-input-container id="name-input" class="md-block">
-    <md-icon>
-      <i class="material-icons md-dark">person</i>
-    </md-icon>
-    <label>Your full name</label>
-    <input ng-model="user.name">
-  </md-input-container>
+    <md-input-container id="name-input" class="md-block">
+      <md-icon>
+        <i class="material-icons md-dark">person</i>
+      </md-icon>
+      <label>Your full name</label>
+      <input ng-model="user.name">
+    </md-input-container>
 
-  <md-input-container id="email-input" class="md-block">
-    <md-icon>
-      <i class="material-icons md-dark">email</i>
-    </md-icon>
-    <label>Your e-mail address</label>
-    <input ng-model="user.email">
-  </md-input-container>
+    <md-input-container id="email-input" class="md-block">
+      <md-icon>
+        <i class="material-icons md-dark">email</i>
+      </md-icon>
+      <label>Your e-mail address</label>
+      <input ng-model="user.email">
+    </md-input-container>
 
-  <md-input-container id="password-input" class="md-block">
-    <md-icon>
-      <i class="material-icons md-dark">lock</i>
-    </md-icon>
-    <label>Password</label>
-    <input ng-model="user.password">
-  </md-input-container>
+    <md-input-container id="password-input" class="md-block">
+      <md-icon>
+        <i class="material-icons md-dark">lock</i>
+      </md-icon>
+      <label>Password</label>
+      <input ng-model="user.password">
+    </md-input-container>
+  </div>
+
+  <div id="signup-btns">
+    <md-button style="text-align: center" id="snu-btn" class="md-raised primary">SIGN UP</md-button>
+  </div>
+
+  <div class="line">
+    <hr>
+  </div>
+  <div class="terms-container">
+    <p class="terms">By signing up, you're agreeing to our</p>
+    <p><a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+  </div>
+
+  <div class="signup-footer">
+    <hr>
+    <span>No account yet?</span>
+    <md-button id="login-btn" md-no-ink class="md-primary" ui-sref="/login">LOG IN</md-button>
+  </div>
+
 </div>
-
