@@ -1,9 +1,21 @@
-h3 {
-    color: red;
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#signup-toolbar {
+    background-color: #0f9d58;
 }
 
 span {
     padding-left: 20px;
 }
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 

@@ -1,6 +1,6 @@
 <link href="css/pages/login.css" rel="stylesheet">
 
-<md-toolbar>
+<md-toolbar id="login-toolbar">
     <div class="md-toolbar-tools">
         <md-icon aria-label="Go Back" ui-sref="/splash">
             <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -12,32 +12,34 @@
     </div>
 </md-toolbar>
 
-<div id="input-container">
-    <md-input-container id="email-input" class="md-block">
+<div class="input-container">
+     <md-input-container id="email-input" class="md-block">
         <md-icon>
-            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                <path d="M0 0h24v24H0z" fill="none"/>
-            </svg>
+            <i class="material-icons md-dark">email</i>
         </md-icon>
         <label>Your e-mail address</label>
         <input ng-model="user.email">
     </md-input-container>
 
-    <md-input-container id="password-field" class="md-block">
+     <md-input-container id="password-input" class="md-block">
         <md-icon>
-            <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h24v24H0z" fill="none"/>
-                <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
-            </svg>
+            <i class="material-icons md-dark">lock</i>
         </md-icon>
         <label>Password</label>
         <input ng-model="user.password">
     </md-input-container>
 </div>
 
-    <md-button id="forgot-btn" md-no-ink class="md-primary">FORGOT PASSWORD?</md-button>
+<div class="btn-container">
     <md-button id="login-btn" class="md-raised md-primary">LOG IN</md-button>
+    <md-button id="forgot-btn" md-no-ink class="md-primary">FORGOT PASSWORD?</md-button>
+</div>
+
+<div class="login-footer">
+    <hr>
+    <span>No account yet?</span>
+    <md-button id="signup-btn" md-no-ink class="md-primary" ui-sref="/signup">SIGN UP</md-button>
+</div>
 
 
 

@@ -37,6 +37,17 @@ angular.module('cp', ['ionic', 'ngMaterial', 'ngAnimate', 'ngAria'])
       templateStyle: './css/pages/login.css'
     });
 
+}).config(($mdThemingProvider) => {
+  $mdThemingProvider.theme('default')
+  .primaryPalette('green', {
+      'default': '700',
+      'hue-1': '100', 
+      'hue-2': '600', 
+      'hue-3': 'A100' 
+    })
+    .accentPalette('purple', {
+      'default': '200' 
+    });
 });
 
 

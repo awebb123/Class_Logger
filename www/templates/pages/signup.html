@@ -1,6 +1,6 @@
 <link href="css/pages/signup.css" rel="stylesheet">
 
-<md-toolbar>
+<md-toolbar id="signup-toolbar">
   <div class="md-toolbar-tools">
     <md-icon aria-label="Go Back" ui-sref="/splash">
       <svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
@@ -13,4 +13,30 @@
 </md-toolbar>
 
 
+<div class="input-container">
+
+  <md-input-container id="name-input" class="md-block">
+    <md-icon>
+      <i class="material-icons md-dark">person</i>
+    </md-icon>
+    <label>Your full name</label>
+    <input ng-model="user.name">
+  </md-input-container>
+
+  <md-input-container id="email-input" class="md-block">
+    <md-icon>
+      <i class="material-icons md-dark">email</i>
+    </md-icon>
+    <label>Your e-mail address</label>
+    <input ng-model="user.email">
+  </md-input-container>
+
+  <md-input-container id="password-input" class="md-block">
+    <md-icon>
+      <i class="material-icons md-dark">lock</i>
+    </md-icon>
+    <label>Password</label>
+    <input ng-model="user.password">
+  </md-input-container>
+</div>
 
